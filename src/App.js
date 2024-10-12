@@ -3,14 +3,18 @@ import Browse from './components/Browse';
 import Login from './components/Login';
 import Header from './components/Header';
 import './index.css';
+import { Provider } from 'react-redux';
+import appstore from "./utils/appstore";
+
 function App() {
   return (
-    <div>
-      
+   
+      <Provider store={appstore}>
       <Body/>
+      </Provider>
      
       
-    </div>
+   
   );
 }
 
