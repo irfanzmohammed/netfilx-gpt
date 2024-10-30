@@ -7,7 +7,7 @@ const MainTrailer = () => {
 
     const movies=useSelector((store)=>store.movies?.nowplaying);
     if(!movies) return;
-    const displaymovie=movies[0];
+    const displaymovie=movies[13];
     const {original_title,overview,id}=displaymovie;
 
   return (
